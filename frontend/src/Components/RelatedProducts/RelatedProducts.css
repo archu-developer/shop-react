@@ -21,3 +21,38 @@
     display: flex;
     gap: 30px;
 }
+@media (max-width: 768px){
+    .relatedproduct{
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    .relatedproduct h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .relatedproduct hr{
+        width: 120px;
+        height: 4px;
+    }
+    .relatedproduct-item{
+        display: flex;
+        flex-wrap: nowrap ;
+        justify-content: flex-start;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        max-width: 100%;
+    }
+    .relatedproduct-item .item {
+        flex: 0 0 auto;
+        width: 80%;
+        scroll-snap-align: start;
+    }
+    .relatedproduct-item::-webkit-scrollbar{
+        display: none;
+    }
+}

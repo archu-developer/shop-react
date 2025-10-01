@@ -38,3 +38,33 @@
     font-weight: 500;
     
 }
+@media (max-width: 768px){
+    .shopcategory-banner{
+        width: 95%;
+        margin: 20px auto;
+    }
+    .shopcategory-indexsort{
+        margin: 10px 20px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+
+    }
+    .shopcategory-sort{
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .shopcategory-products{
+        margin: 20px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        column-gap: 15px;
+    }
+    .shopcategory-loadmore{
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+        margin: 50px auto;
+    }
+  
+}

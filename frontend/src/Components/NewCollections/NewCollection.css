@@ -23,3 +23,38 @@
     margin-top: 50px;
     gap: 30px;
 }
+@media(max-width: 768px){
+    .collections{
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        overflow-x: hidden;       
+    }
+    .collections{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .collections .item {
+        flex: 0 0 auto;
+        width: 80%;
+        scroll-snap-align: start;
+    }
+    .collections::-webkit-scrollbar{
+        display: none;
+    }
+    .new-collections h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+   
+   
+}
